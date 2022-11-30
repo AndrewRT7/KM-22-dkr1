@@ -282,7 +282,7 @@ def hangman_with_hints(secret_word):
                 print('You already guessed that letter. You have', warnings_remaining(warnings), 'warnings left:', *get_guessed_word(secret_word, letters_guessed))
             elif guess == '*':
                 print('Possible word matches are: ')
-                print(show_possible_matches((get_guessed_word(secret_word, letters_guessed)))) 
+                print(show_possible_matches(''.join(get_guessed_word(secret_word, letters_guessed)))) 
 
 
 # When you've completed your hangman_with_hint function, comment the two similar
